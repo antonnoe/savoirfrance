@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Een levende presentatie over Café Claude, Infofrankrijk en DossierFrankrijk.">
+  <title>Café Claude — controleerbare kennis die blijft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#scene-1">Ga naar de presentatie</a>
+
+  <header class="topbar">
+    <a class="brand" href="#scene-1" aria-label="Naar het begin">
+      <span class="brand-mark" aria-hidden="true">☕</span>
+      <span><strong>Café Claude</strong><small>by Infofrankrijk</small></span>
+    </a>
+
+    <div class="topbar-actions">
+      <button class="control" id="autoplay" type="button" aria-pressed="false">
+        <span class="control-icon" aria-hidden="true">▶</span>
+        <span class="control-label">Autoscroll</span>
+      </button>
+      <button class="control" id="muteMotion" type="button" aria-pressed="false">
+        <span class="control-icon" aria-hidden="true">◌</span>
+        <span class="control-label">Rustige modus</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="chapter-nav" aria-label="Hoofdstukken">
+    <button data-target="scene-1"><span>01</span>Belofte</button>
+    <button data-target="scene-3"><span>02</span>Vraag</button>
+    <button data-target="scene-5"><span>03</span>Kwaliteit</button>
+    <button data-target="scene-10"><span>04</span>Kennishub</button>
+  </nav>
+
+  <div class="progress-rail" aria-hidden="true">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <main id="story">
+    <section class="scene hero" id="scene-1" data-title="Belofte">
+      <div class="scene-inner hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Een levende presentatie</p>
+          <h1>Niet zomaar een antwoord.</h1>
+          <p class="hero-subtitle">Een controleerbaar antwoord dat blijft.</p>
+          <p class="lead">U ziet niet alleen de uitkomst, maar ook de herkomst, controle, Q-score en houdbaarheid.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://www.cafeclaude.fr/" target="_blank" rel="noopener">Test Café Claude</a>
+            <button class="button secondary" data-target="scene-2" type="button">Bekijk hoe het werkt</button>
+          </div>
+          <p class="testdrive">Proefrit: 4 volledig gecontroleerde antwoordtrajecten.</p>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Van vraag naar gecontroleerde kennis">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <article class="hero-card hero-card-a">
+            <span class="mini-label">Vraag</span>
+            <strong>Uw situatie</strong>
+            <small>gericht opgebouwd</small>
+          </article>
+          <article class="hero-card hero-card-b">
+            <span class="mini-label">Controle</span>
+            <strong>Bronnen + auditor</strong>
+            <small>zichtbaar voor u</small>
+          </article>
+          <article class="hero-card hero-card-c">
+            <span class="mini-label">Kennishub</span>
+            <strong>DossierFrankrijk</strong>
+            <small>blijvend toegankelijk</small>
+          </article>
+        </div>
+      </div>
+      <button class="scroll-cue" data-target="scene-2" aria-label="Naar de volgende stap">↓</button>
+    </section>
+
+    <section class="scene" id="scene-2" data-title="Start">
+      <div class="scene-inner split">
+        <div class="copy reveal">
+          <p class="step">01 — Start</p>
+          <h2>Naam en locatie. Geen registratiecircus.</h2>
+          <p>Café Claude gebruikt naam en Franse postcode of locatie om uw context te herkennen. Daarna volgt abonneeherkenning of de proefrit.</p>
+          <ul class="checklist">
+            <li>Naam</li>
+            <li>Postcode of locatie</li>
+            <li>Proefrit of Infofrankrijk-abonnee</li>
+          </ul>
+        </div>
+        <div class="browser-card reveal delay-1">
+          <img src="assets/cc-start.png" alt="Startscherm van Café Claude met naam en postcode">
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="scene-3" data-title="Vraagfunnel">
+      <div class="scene-inner">
+        <div class="section-heading reveal">
+          <p class="step">02 — Vraagfunnel</p>
+          <h2>U typt niet. U kiest.</h2>
+          <p>De vraag wordt stap voor stap opgebouwd: domein, onderwerp en situatie.</p>
+        </div>
+
+        <div class="funnel-grid">
+          <article class="funnel-card reveal">
+            <span class="number">1</span>
+            <h3>Domein</h3>
+            <p>Ondernemen, wonen, geld, verzekeren, zorg of bureaucratie.</p>
+            <img src="assets/cc-domains.png" alt="Domeinkeuze in Café Claude">
+          </article>
+          <article class="funnel-card reveal delay-1">
+            <span class="number">2</span>
+            <h3>Onderwerp</h3>
+            <p>De gebruiker kiest de route die past bij de informatiebehoefte.</p>
+            <img src="assets/cc-topics.png" alt="Onderwerpen in Café Claude">
+          </article>
+          <article class="funnel-card reveal delay-2">
+            <span class="number">3</span>
+            <h3>Situatie</h3>
+            <p>Gerichte vragen leveren de context voor een bruikbaar antwoord.</p>
+            <img src="assets/cc-situation.png" alt="Situatievragen in Café Claude">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene dark" id="scene-4" data-title="Samengestelde vraag">
+      <div class="scene-inner centered">
+        <p class="step reveal">03 — Samengestelde vraag</p>
+        <h2 class="reveal">Van klikken naar een concrete informatievraag.</h2>
+        <div class="question-builder reveal delay-1">
+          <span class="chip">Domein: Geld &amp; Belasting</span>
+          <span class="join">+</span>
+          <span class="chip">Onderwerp: Buitenlands inkomen</span>
+          <span class="join">+</span>
+          <span class="chip">Situatie: Verhuizen naar Frankrijk</span>
+          <span class="equals">=</span>
+          <blockquote>
+            Welke inkomsten moet ik in Frankrijk opgeven als ik in Nederland pensioen ontvang en fiscaal inwoner van Frankrijk word?
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="scene-5" data-title="Bronlaag">
+      <div class="scene-inner split">
+        <div class="copy reveal">
+          <p class="step">04 — Bronlaag</p>
+          <h2>De bronkeuze is vooraf begrensd.</h2>
+          <p>De AI-agent zoekt niet willekeurig. Bronnen zijn vooraf geselecteerd en gerangschikt.</p>
+          <div class="source-stack">
+            <div class="source-level aaa"><strong>AAA</strong><span>Officiële overheidsbronnen</span></div>
+            <div class="source-level aa"><strong>AA</strong><span>Erkende instanties</span></div>
+            <div class="source-level a"><strong>A</strong><span>Aanvullende betrouwbare bronnen</span></div>
+            <div class="source-level nogo"><strong>No-go</strong><span>Geblokkeerd als onderbouwing</span></div>
+          </div>
+          <p class="note">Nederlanders.fr is hier geen antwoordbron, maar een sonderingsmeter: daar wordt zichtbaar welke vragen werkelijk leven.</p>
+        </div>
+        <div class="browser-card reveal delay-1">
+          <img src="assets/cc-sources.png" alt="Bronnenoverzicht met classificatie in Café Claude">
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="scene-6" data-title="Agent en auditor">
+      <div class="scene-inner">
+        <div class="section-heading reveal">
+          <p class="step">05 — AI-agent + AI-auditor</p>
+          <h2>Twee strikt gescheiden rollen.</h2>
+          <p>De eerste agent stelt op. De tweede controleert en scoort.</p>
+        </div>
+
+        <div class="agent-flow">
+          <article class="agent-card reveal">
+            <span class="agent-icon">✦</span>
+            <h3>AI-agent</h3>
+            <p>Stelt het conceptantwoord op met de geselecteerde bronnen en gebruikerscontext.</p>
+          </article>
+          <div class="flow-arrow reveal delay-1">→</div>
+          <article class="agent-card reveal delay-1">
+            <span class="agent-icon">✓</span>
+            <h3>AI-auditor</h3>
+            <p>Controleert feiten, bedragen, termijnen, brongebruik, actualiteit en jurisdictie.</p>
+          </article>
+        </div>
+
+        <div class="browser-card wide reveal delay-2">
+          <img src="assets/cc-generation.png" alt="Café Claude stelt het antwoord op en controleert het">
+        </div>
+      </div>
+    </section>
+
+    <section class="scene dark" id="scene-7" data-title="Definitief antwoord">
+      <div class="scene-inner">
+        <div class="section-heading reveal">
+          <p class="step">06 — Definitief antwoord</p>
+          <h2>De output is pas het begin van de verificatie.</h2>
+          <p>De gebruiker kan zelf nagaan hoe het antwoord tot stand kwam.</p>
+        </div>
+
+        <div class="evidence-grid">
+          <article class="evidence reveal"><span>01</span><strong>Bronnen</strong><small>welke informatie is geraadpleegd?</small></article>
+          <article class="evidence reveal delay-1"><span>02</span><strong>Q-score</strong><small>hoe scoort het antwoord?</small></article>
+          <article class="evidence reveal delay-2"><span>03</span><strong>Auditor</strong><small>welke bevindingen zijn vastgelegd?</small></article>
+          <article class="evidence reveal delay-3"><span>04</span><strong>Houdbaarheid</strong><small>tot wanneer blijft het actueel?</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="scene-8" data-title="Tracking en tracing">
+      <div class="scene-inner">
+        <div class="section-heading reveal">
+          <p class="step">07 — Tracking &amp; tracing</p>
+          <h2>Belangrijker dan het antwoord zelf.</h2>
+          <p>Herkomst, controle en actualiteit van het definitieve antwoord blijven inspecteerbaar.</p>
+        </div>
+
+        <div class="trace-layout">
+          <div class="trace-visual reveal">
+            <div class="trace-node active"><span>Vraag</span><small>context</small></div>
+            <div class="trace-line"></div>
+            <div class="trace-node active"><span>Bronnen</span><small>classificatie</small></div>
+            <div class="trace-line"></div>
+            <div class="trace-node active"><span>Controle</span><small>8 criteria</small></div>
+            <div class="trace-line"></div>
+            <div class="trace-node active"><span>Q-score</span><small>kwaliteit</small></div>
+            <div class="trace-line"></div>
+            <div class="trace-node active"><span>Datum</span><small>houdbaarheid</small></div>
+          </div>
+
+          <div class="screen-stack reveal delay-1">
+            <figure><img src="assets/cc-quality.png" alt="Kwaliteitsscore van Café Claude"><figcaption>Kwaliteit</figcaption></figure>
+            <figure><img src="assets/cc-auditor.png" alt="Auditorbevindingen in Café Claude"><figcaption>Auditor</figcaption></figure>
+            <figure><img src="assets/cc-sources.png" alt="Bronnen van een Café Claude-antwoord"><figcaption>Bronnen</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="scene-9" data-title="Retry">
+      <div class="scene-inner centered">
+        <p class="step reveal">08 — Alleen indien nodig</p>
+        <h2 class="reveal">Q lager dan 8? Dan volgt een gerichte retry.</h2>
+        <p class="lead narrow reveal">Niet de gebruiker, maar het kwaliteitssysteem bepaalt of herstel nodig is.</p>
+
+        <div class="retry-loop reveal delay-1">
+          <div class="score bad"><strong>Q 7,2</strong><small>onder drempel</small></div>
+          <div class="retry-arrow">→</div>
+          <div class="retry-core"><strong>Retry</strong><small>mislukte controles worden verbeterinstructies</small></div>
+          <div class="retry-arrow">→</div>
+          <div class="score good"><strong>Q 8,8</strong><small>publiceerbaar</small></div>
+        </div>
+        <p class="note">De normale route loopt rechtstreeks van het gecontroleerde antwoord naar publicatie. Retry is de uitzondering.</p>
+      </div>
+    </section>
+
+    <section class="scene ecosystem" id="scene-10" data-title="Kennishub">
+      <div class="scene-inner">
+        <div class="section-heading reveal">
+          <p class="step">09 — Eén ecosysteem</p>
+          <h2>Drie onderdelen. Eén persoonlijke kennishub.</h2>
+          <p>Café Claude en Infofrankrijk voeden DossierFrankrijk via twee gelijkwaardige routes.</p>
+        </div>
+
+        <div class="ecosystem-map">
+          <article class="eco-card cc reveal">
+            <p class="eco-kicker">Café Claude</p>
+            <h3>Controleerbare antwoorden</h3>
+            <ul>
+              <li>bronnen</li>
+              <li>Q-score</li>
+              <li>auditorbevindingen</li>
+              <li>houdbaarheidsdatum</li>
+            </ul>
+          </article>
+
+          <div class="eco-arrow arrow-a reveal delay-1">→</div>
+
+          <article class="eco-card df reveal delay-2">
+            <p class="eco-kicker">DossierFrankrijk</p>
+            <h3>Blijvende persoonlijke kennishub</h3>
+            <ul>
+              <li>bewaart versies naast elkaar</li>
+              <li>ordent met toestemming</li>
+              <li>signaleert inconsistenties</li>
+              <li>waarschuwt voor houdbaarheid</li>
+            </ul>
+          </article>
+
+          <article class="eco-card if reveal delay-1">
+            <p class="eco-kicker">Infofrankrijk</p>
+            <h3>Dossiers, tools en berekeningen</h3>
+            <ul>
+              <li>kennisdossiers</li>
+              <li>rekenmodules</li>
+              <li>simulaties</li>
+              <li>scenariobuilders</li>
+            </ul>
+          </article>
+
+          <div class="eco-arrow arrow-b reveal delay-2">↗</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene" id="scene-11" data-title="Infofrankrijk naar DossierFrankrijk">
+      <div class="scene-inner split">
+        <div class="copy reveal">
+          <p class="step">10 — IF → DF</p>
+          <h2>Ook tool-output wordt onderdeel van uw kennishub.</h2>
+          <p>Een concreet voorbeeld is het Financieel Kompas: netto-inkomsten in Frankrijk en Nederland vergelijken, scenario’s doorrekenen en de uitkomst direct bewaren.</p>
+          <a class="text-link" href="https://infofrankrijk.com/financieel-kompas/" target="_blank" rel="noopener">Bekijk het Financieel Kompas →</a>
+        </div>
+
+        <div class="data-pipeline reveal delay-1" aria-label="Van Infofrankrijk naar DossierFrankrijk">
+          <article>
+            <span class="pipeline-icon">∑</span>
+            <strong>Financieel Kompas</strong>
+            <small>invoer + scenario</small>
+          </article>
+          <span class="pipeline-arrow">→</span>
+          <article>
+            <span class="pipeline-icon">≋</span>
+            <strong>Persoonlijke output</strong>
+            <small>FR–NL vergelijking</small>
+          </article>
+          <span class="pipeline-arrow">→</span>
+          <article class="pipeline-destination">
+            <span class="pipeline-icon">▣</span>
+            <strong>DossierFrankrijk</strong>
+            <small>datum, scenario en herkomst blijven intact</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene dark" id="scene-12" data-title="Blijvende waarde">
+      <div class="scene-inner split">
+        <div class="copy reveal">
+          <p class="step">11 — Blijvende waarde</p>
+          <h2>Wat u opbouwt, blijft toegankelijk.</h2>
+          <p>Ook na beëindiging van het abonnement blijft de opgeslagen inhoud beschikbaar. Alleen de actieve AI-assistent vervalt.</p>
+          <ul class="checklist light">
+            <li>oude antwoorden blijven bewaard</li>
+            <li>actuelere versies worden toegevoegd, nooit overschreven</li>
+            <li>de persoonlijke kennishub blijft raadpleegbaar</li>
+            <li>de Dossier Assistent is alleen actief voor abonnees</li>
+          </ul>
+        </div>
+        <div class="browser-card reveal delay-1">
+          <img src="assets/df-dashboard.png" alt="DossierFrankrijk als persoonlijke kennishub">
+        </div>
+      </div>
+    </section>
+
+    <section class="scene finale" id="scene-13" data-title="CTA">
+      <div class="scene-inner centered">
+        <p class="eyebrow reveal">Eerst testen. Daarna beslissen.</p>
+        <h2 class="reveal">Controleer het verschil zelf.</h2>
+        <p class="lead narrow reveal">Vier volledig gecontroleerde antwoordtrajecten als proefrit. Daarna onbeperkt verder als abonnee.</p>
+        <div class="final-actions reveal delay-1">
+          <a class="button primary large" href="https://www.cafeclaude.fr/" target="_blank" rel="noopener">Test Café Claude</a>
+          <a class="button secondary large" href="https://infofrankrijk.com/" target="_blank" rel="noopener">Word abonnee — introductie 2026: €49/jaar</a>
+        </div>
+        <p class="fineprint">Café Claude genereert informatie met AI en vervangt geen professioneel advies.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="autoplay-status" id="autoplayStatus" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
